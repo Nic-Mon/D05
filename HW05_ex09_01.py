@@ -7,11 +7,15 @@
 # Imports
 
 # Body
-
+def print_long_words(filename):
+	words_file = open(filename, 'r')
+	for line in words_file:
+		if(len(line) > 20):
+			print(line, end='')
 
 ##############################################################################
 def main():
-    pass  # Call your functions here.
+    print_long_words('words.txt')
 
 if __name__ == '__main__':
     main()
